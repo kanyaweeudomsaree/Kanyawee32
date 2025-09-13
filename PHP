@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+// สร้าง Array ชุดที่ 1
+$array1 = array(
+    "a" => "apple",
+    "b" => "bee",
+    "c" => "cat",
+    "d" => "dog"
+);
+
+// สร้าง Array ชุดที่ 2
+$array2 = array(
+    "a" => "apple",
+    "b" => "boy",
+    "c" => "cat",
+    "d" => "dog"
+);
+
+// รวมข้อมูลจากทั้งสอง Array
+$merged = array_merge($array1, $array2);
+
+// แสดงผล Array แต่ละชุด
+echo "<h3>Array 1</h3>";
+echo "<pre>";
+print_r($array1);
+echo "</pre>";
+
+echo "<h3>Array 2</h3>";
+echo "<pre>";
+print_r($array2);
+echo "</pre>";
+
+echo "<h3>Merged Array</h3>";
+echo "<pre>";
+print_r($merged);
+echo "</pre>";
+?>
+
+
+</body>
+</html>
